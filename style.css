@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300&family=Lexend+Deca:wght@200&display=swap');
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
+    color: black;
+}
+
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#perfil{
+    height: 100vh;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+#perfil-img{
+    height: 100%;
+    width: 100%;
+}
+
+#overlay{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50%;
+}
+
+
+#conteudo{
+    background-color: #FFE5A3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100vh;
+    overflow: auto;
+}
+
+#perfil-redondo{
+    margin-top: 100px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border:4px solid #3A693F ;
+}
+
+
+ul{
+    font-size: 1.3rem;
+    list-style-type: none;
+    text-align: justify;
+}
+
+li{
+    margin-bottom: 40px;
+    margin-right: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 80%;
+    border: 1px solid black;
+}
+
+@media(max-width: 800px){
+    body{
+        flex-direction: column;
+        overflow: auto;
+    }
+    
+    #perfil{
+        width: 100%;
+        height: 70vh;
+    }
+
+    #conteudo{
+        width: 100%;
+    }
+
+    #perfil-redondo{
+        margin-top: 500px;
+    }
+}
